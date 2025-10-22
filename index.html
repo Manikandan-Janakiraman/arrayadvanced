@@ -221,20 +221,85 @@
     </script>
 
 
-       <!-- Map Method-->
-    <script>
+
+    <!-- Map Method-->
+    <script>  // Multiply
         const math = [1, 2, 3, 4]
-        const double = math.map(num => num *2);
+        const double = math.map(num => num * 2);
         console.log('Single Value:', math);
         console.log('Double Value:', double);
     </script>
 
-    <script>
-        const arrs = [20, 40, 60]
-        arrs.map((a, i) => {          // callback function 
-            console.log('Map Function', a, i);
-        });
+    <script>  // add +5
+        const five = [5, 10, 15];
+        const add = five.map(n => n + 5);
+        console.log('Constant:', add);
     </script>
+
+    <script>  // convert number to string
+        const num = [1, 2, 3]
+        const toString = num.map(String);
+        console.log(toString);
+    </script>
+
+    <script>  // convert string to number
+        const locationss = ["1", "2", "4", "chennai", "mumbai", "kolkata"]
+        const toNumber = locationss.map(Number);
+        console.log(toNumber);
+    </script>
+
+    <script>   // count the string 
+        const place = ["chennai", "mumbai", "kolkata"]
+        const newplace = place.map(w => w.length);
+        console.log(newplace);
+    </script>
+
+    <script>  // first letter upper case
+        const word = ["javascript", "react", "express"]
+        const capital = word.map(n => n[0].toUpperCase() + n.slice(1));
+        console.log(capital);
+    </script>
+
+    <script>  // first letter lower case
+        const words = ["JAVASCRIPT", "REACT", "EXPRESS"]
+        const lowercase = words.map(n => n[0].toLowerCase() + n.slice(1));
+        console.log(lowercase);
+    </script>
+
+    <script>   // full upper case
+        const wordz = ["javascript", "react", "express"]
+        const capitalz = wordz.map(wordz => wordz.toUpperCase());
+        console.log(capitalz);
+    </script>
+
+    <script>   // full lower case
+        const wordc = ["JAVASCRIPT", "REACT", "EXPRESS"]
+        const capitalr = wordz.map(wordc => wordc.toLowerCase());
+        console.log(capitalr);
+    </script>
+
+    <script>   // boolean
+        const boolean = [2, 4, 6]
+        const isBig = boolean.map(n => n > 4)
+        console.log(isBig);
+    </script>
+
+    <script>   // Numbers isFinite returns true or false
+        let result = isFinite(123);
+        console.log(result);
+    </script>
+
+    <script>   // String isFinite returns true or false
+        let resultz = isFinite("Hello");
+        console.log(resultz);
+    </script>
+
+
+
+
+
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
