@@ -172,18 +172,6 @@
 
 
 
-
-    <!-- Map Function -->
-    <script>
-        const arrs = [20, 40, 60]
-        arrs.map((a, i) => {          // callback function 
-            console.log('Map Function', a, i);
-        });
-    </script>
-
-
-
-
     <!-- Reduce -->
     <script>
         const ars = [10, 20, 30, 40]
@@ -232,6 +220,21 @@
         console.log('Find Function:', search);
     </script>
 
+
+       <!-- Map Method-->
+    <script>
+        const math = [1, 2, 3, 4]
+        const double = math.map(num => num *2);
+        console.log('Single Value:', math);
+        console.log('Double Value:', double);
+    </script>
+
+    <script>
+        const arrs = [20, 40, 60]
+        arrs.map((a, i) => {          // callback function 
+            console.log('Map Function', a, i);
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
