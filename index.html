@@ -296,6 +296,60 @@
 
 
 
+    <!-- For Each -->
+
+    <script>  // Numbers
+        const jvs = [10, 20, 30, 40];
+        jvs.forEach((currentValue, index) => {
+            console.log('Higher Order Array Methods:', currentValue, 'Index:', index);
+        });
+    </script>
+
+    <script>  // String
+        const jvk = ["JAVASCRIPT", "REACT", "EXPRESS"];
+        jvk.forEach((currentValue, index) => {
+            console.log('Higher Order Array Methods:', currentValue, 'Index:', index);
+        });
+    </script>
+
+    <script>
+        const nums = [1, 2, 3];
+        nums.forEach(n => console.log(n, nums));
+    </script>
+
+    <script>
+        const string = ["JAVASCRIPT", "REACT", "EXPRESS"];
+        string.forEach(n => console.log(n));
+    </script>
+
+    <script>  // multiply x 2
+        const n = [1, 2, 3];
+        n.forEach((num) => console.log('Multiply', num * 2));
+    </script>
+
+    <script>  // square
+        const s = [1, 2, 3];
+        s.forEach((num) => console.log('Square', num * num));
+    </script>
+
+    <script>  // Cube
+        const cube = [1, 2, 3];
+        cube.forEach((num) => console.log('Cube', num * num * num));
+    </script>
+
+    <script>  // even number
+        const even = [11, 22, 33, 44]
+        even.forEach(n => {
+            if (n % 2 === 0) console.log(`${n} is even`)
+        });
+    </script>
+
+    <script>  // odd number
+        const odd = [11, 22, 33, 44]
+        odd.forEach(n => {
+            if (n % 2 != 0) console.log(`${n} is odd`)
+        });
+    </script>
 
 
 
